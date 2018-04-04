@@ -9,7 +9,7 @@ $input = json_decode(file_get_contents('php://input'),true);
 switch ($method) {
   case 'GET':
     echo $method."<br><br>";
-    echo "VIN: ".$input."<br><br>";
+    echo "VIN: ".$_GET["VIN"]."<br><br>";
     break;
   case 'PUT':
     echo $method."<br><br>";
