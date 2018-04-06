@@ -16,9 +16,13 @@ switch ($method) {
     break;
   case 'POST':
     echo $method."<br><br>";
+    echo print_r($input, true);
     break;
   case 'DELETE':
     echo $method."<br><br>";
+    break;
+  default:
+    echo "wrong command...";
     break;
 }
  
